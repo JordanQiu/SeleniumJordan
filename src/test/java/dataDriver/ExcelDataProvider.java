@@ -19,9 +19,18 @@ public class ExcelDataProvider implements Iterator<Map> {
 	private int columnNum;
 	private int curRowNum;
 	private String[] columnName;
+	private static String fileName;
+	public String getCurExcelPath(){
+	String	projectPath =System.getProperty("user.dir");
+	String pP = projectPath.replace('\\', '\\');
+		return projectPath+"\\src\\test\\java\\resource";
+	}
+	
+	
 	
 	public ExcelDataProvider(String fileName,String sheetName) {
 		//String fileName="F:\\Jordan\\git reposi\\SeleniumTest-master\\cdp\\src\\test\\java\\resource\\CloudData.xls";
+		
 		File  directory = new File(fileName);
 		try {
 			workBook = Workbook.getWorkbook(directory);
@@ -35,7 +44,7 @@ public class ExcelDataProvider implements Iterator<Map> {
 	    sheet =workBook.getSheet(sheetName);
 	    rowNum = sheet.getRows();
 		columnNum =sheet.getColumns();
-		Cell[] cl=sheet.getRow(0);
+		Cell[] cl=sheet.getRow(1);
 		columnName = new String[cl.length];
 		for(int i=0;i<cl.length;i++){
 		columnName[i] = cl[i].getContents();

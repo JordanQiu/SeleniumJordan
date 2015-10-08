@@ -18,13 +18,14 @@ public class Test {
 	WebDriver driver =Login.loadDriver();
 	
     public static void main(String[] args) {
-    // String fileName ="D:\\Javaspace\\SeleniumJordan\\src\\test\\java\\resource\\CloudData.xls";
-    // String sheetName="AssignShift";
-    // ExcelDataProvider edp =  new ExcelDataProvider(fileName,sheetName);
-    // SetExcelValue.setExcelValue(fileName,sheetName);
-     
-   
-
+//     String fileName ="D:\\Javaspace\\SeleniumJordan\\src\\test\\java\\resource\\CloudData.xls";
+//     String sheetName="AssignShift";
+//     ExcelDataProvider edp =  new ExcelDataProvider(fileName,sheetName);
+//     SetExcelValue.setExcelValue(fileName,sheetName);
+    
+    	String	projectPath =System.getProperty("user.dir");
+    	String pP = projectPath.replaceAll("", "\\");
+System.out.println(pP);
     }
     @org.testng.annotations.BeforeSuite
    public void login(){
