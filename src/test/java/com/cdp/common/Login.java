@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Login {
-  public static void login(String com,String user,String psw){
+	//url为properties文件中的objectName“url”
+  public static void login(WebDriver driver,String url,String com,String user,String psw){
 	  // System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");  
-  	  WebDriver driver = new FirefoxDriver();
-      driver.get(UIMap.getObject("url"));
-      driver.manage().window().maximize();
+  	   driver.get(UIMap.getObject(url));
+       driver.manage().window().maximize();
       WebElement ele = driver.findElement(By.xpath(UIMap.getObject("company_xpath")));
       ele.sendKeys(com);
       WebElement ele2 = driver.findElement(By.xpath(UIMap.getObject("user_xpath")));
@@ -23,4 +23,11 @@ public class Login {
       ele4.click();
     
   }
+  
+  public static WebDriver loadDriver(){
+	  WebDriver driver = new FirefoxDriver();
+   
+      return driver;
+  }
+  
 }

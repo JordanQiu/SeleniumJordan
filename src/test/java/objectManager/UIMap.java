@@ -10,7 +10,7 @@ public class UIMap {
      public static String getObject(String obj){
     	 Properties prop = new Properties();
     	 try {
-    		 InputStream fis = new FileInputStream("F:\\Jordan\\git reposi\\SeleniumTest-master\\cdp\\src\\test\\java\\META-INF\\prop.properties");
+    		 InputStream fis = new FileInputStream("D:\\Javaspace\\SeleniumJordan\\src\\test\\java\\META-INF\\prop.properties");
 			prop.load(fis);
 			fis.close();
 		} catch(FileNotFoundException e){
