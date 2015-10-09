@@ -1,5 +1,6 @@
 package com.cdp;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import objectManager.UIMap;
 
@@ -23,10 +24,13 @@ public class Test {
 //     ExcelDataProvider edp =  new ExcelDataProvider(fileName,sheetName);
 //     SetExcelValue.setExcelValue(fileName,sheetName);
     
-    	String	projectPath =System.getProperty("user.dir");
-    	String pP = projectPath.replaceAll("", "\\");
-System.out.println(pP);
+  
+    	
+
     }
+    
+  
+    
     @org.testng.annotations.BeforeSuite
    public void login(){
 	   Login.login(driver,"url","ralphlauren", "rl", "Init1234");
