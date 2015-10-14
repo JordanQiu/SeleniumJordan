@@ -3,7 +3,7 @@
  <test name="testNGTest" >
    <parameter name="dataIndex" value="1">
      <classes>
-       <class name="test.java.com.cdp.Test">
+       <class name="src.test.java.com.cdp.Test">
          <methods>
             <include name="login" />
             <include name="enterTimeMenu" />
