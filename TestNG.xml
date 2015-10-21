@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
 <suite name="SeleniumJordan" verbose ="1">
  <test name="testNGTest" >
-   <parameter name="dataIndex" value="1">
+   <parameter name="dataIndex" value="0">
      <classes>
        <class name="com.cdp.Test">
          <methods>
