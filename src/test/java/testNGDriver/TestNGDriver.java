@@ -22,7 +22,7 @@ public class TestNGDriver {
 		List<String> suites= new ArrayList<String>();
 		
 		//System.out.println(System.getProperty("user.dir"));
-		suites.add(projectPath+File.separator+"src/test/java/META-INF"+File.separator+"TestNG.xml");
+		suites.add(projectPath+File.separator+"TestNG.xml");
 		testng.setTestSuites(suites);
 		File file = new File(caseLogPath);
 		if(!file.exists()){

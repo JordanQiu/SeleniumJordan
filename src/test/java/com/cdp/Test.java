@@ -33,6 +33,7 @@ public class Test {
   
     @org.testng.annotations.Test(description="enter time menu")
    public void enterTimeMenu(){
+    	
 	      WebElement ele = driver.findElement(By.xpath(UIMap.getObject("Time_xpath")));
 	      ele.click();
 	      WebElement ele2 = driver.findElement(By.xpath(UIMap.getObject("Schdule_xpath")));
