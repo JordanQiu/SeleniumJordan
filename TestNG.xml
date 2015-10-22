@@ -1,6 +1,30 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
-<suite name="SeleniumJordan" verbose ="1">
- <test name="testNGTest" >
+<suite name="SeleniumJordan" verbose ="1" parallel="tests" thread-count="5">
+ <test name="Localtest" >
+ <parameter name="platform" value="Windows" />
+ <parameter name="seleniumHost" value="127.0.0.1" /> 
+ <parameter name="seleniumPort" value="5555" /> 
+ <parameter name="nodeUrl" value="192.168.9.51" />
+ <parameter name="bs" value="*firefox" />
+   <parameter name="dataIndex" value="1">
+     <classes>
+       <class name="com.cdp.Test">
+         <methods>
+            <include name="login" />
+            <include name="enterTimeMenu" />
+            <include name="enterSalaryMenu" />
+            <include name="logOut" />
+         </methods>
+       </class>
+     </classes>
+   </parameter>
+ </test>
+ <test name="RCTest" >
+ <parameter name="seleniumHost" value="192.168.9.35" /> 
+ <parameter name="platform" value="Windows" />
+ <parameter name="seleniumPort" value="5555" /> 
+ <parameter name="nodeUrl" value="192.168.9.35" />
+ <parameter name="bs" value="*iexplore" />
    <parameter name="dataIndex" value="1">
      <classes>
        <class name="com.cdp.Test">
