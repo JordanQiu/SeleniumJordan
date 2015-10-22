@@ -19,9 +19,18 @@ public class ExcelDataProvider implements Iterator<Map> {
 	private int columnNum;
 	private int curRowNum;
 	private String[] columnName;
+	private static String fileName;
+	public String getCurExcelPath(){
+	String	projectPath =System.getProperty("user.dir");
+	String pP = projectPath.replaceAll("\\\\", "\\\\\\\\");
+	return pP+"\\\\src\\\\test\\\\java\\\\resource";
+	}
 	
-	public ExcelDataProvider(String fileName,String sheetName) {
+	//excelName传参的前提是所有的表单类的数据都是放在这个resource文件下。
+	//excelName是F:\\Jordan\\git reposi\\SeleniumTest-master\\cdp\\src\\test\\java\\resource\\CloudData.xls中的CloudData.xls
+	public ExcelDataProvider(String excelName,String sheetName) {
 		//String fileName="F:\\Jordan\\git reposi\\SeleniumTest-master\\cdp\\src\\test\\java\\resource\\CloudData.xls";
+		fileName=getCurExcelPath()+"\\\\"+excelName;
 		File  directory = new File(fileName);
 		try {
 			workBook = Workbook.getWorkbook(directory);
@@ -35,7 +44,7 @@ public class ExcelDataProvider implements Iterator<Map> {
 	    sheet =workBook.getSheet(sheetName);
 	    rowNum = sheet.getRows();
 		columnNum =sheet.getColumns();
-		Cell[] cl=sheet.getRow(0);
+		Cell[] cl=sheet.getRow(1);
 		columnName = new String[cl.length];
 		for(int i=0;i<cl.length;i++){
 		columnName[i] = cl[i].getContents();

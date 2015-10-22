@@ -13,8 +13,8 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 public class SetExcelValue {
     static WebDriver drv= new FirefoxDriver();
-    public static void setExcelValue(String fileName,String sheetName){
-	ExcelDataProvider edp = new ExcelDataProvider(fileName, sheetName);
+    public static void setExcelValue(String excelName,String sheetName){
+	ExcelDataProvider edp = new ExcelDataProvider(excelName,sheetName);
 	while(edp.hasNext()){
 		Map<String, String> obj_value = edp.next();
 		//obj_value.keySet() 

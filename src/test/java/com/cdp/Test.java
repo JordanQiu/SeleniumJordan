@@ -2,6 +2,7 @@ package com.cdp;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import objectManager.UIMap;
 
@@ -26,11 +27,11 @@ public class Test {
 	WebDriver driver =Login.loadDriver();
 	
     public static void main(String[] args) {
-    // String fileName ="D:\\Javaspace\\SeleniumJordan\\src\\test\\java\\resource\\CloudData.xls";
-    // String sheetName="AssignShift";
-    // ExcelDataProvider edp =  new ExcelDataProvider(fileName,sheetName);
-    // SetExcelValue.setExcelValue(fileName,sheetName);
+
     }
+    
+  
+    
     @org.testng.annotations.BeforeSuite
     public void login(){
  	   Login.login(driver,"url","ralphlauren", "rl", "Init1234");
