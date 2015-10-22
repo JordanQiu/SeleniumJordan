@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumJordan]">
+  <parameter name="dataIndex" value="1"/>
+  <test name="testNGTest(failed)">
+    <parameter name="dataIndex" value="1"/>
+    <classes>
+      <class name="com.cdp.Test">
+        <methods>
+          <include name="login"/>
+          <include name="enterSalaryMenu"/>
+          <include name="enterTimeMenu"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- com.cdp.Test -->
+    </classes>
+  </test> <!-- testNGTest(failed) -->
+</suite> <!-- Failed suite [SeleniumJordan] -->
