@@ -22,5 +22,15 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jordan.Qiu/.m2/repository/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.jar" sourcepath="C:/Users/Jordan.Qiu/.m2/repository/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-api"/>
+			<attribute name="maven.version" value="2.47.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Eclipse/eclipse/plugins/org.testng.eclipse_6.9.5.201508210528/lib/testng.jar" sourcepath="C:/Eclipse/eclipse/plugins/org.testng.eclipse_6.9.5.201508210528/lib/testng-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

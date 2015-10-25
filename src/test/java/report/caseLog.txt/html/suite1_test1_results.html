@@ -3,47 +3,50 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>cloud test report - Localtest</title>
+  <title>cloud test report - RCtest</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Localtest</h1>
+<h1>RCtest</h1>
 <p>
-  Test duration: 0.036s
+  Test duration: 12.441s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.cdp.Test</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.cdp.Test</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="enter Salary menu">enterSalaryMenu</span>
+                  logOut
       </td>
   <td class="duration">
-    0.014s
+    0.000s
   </td>
   <td class="result">
         
+          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:5556/wd/hub", "firefox"</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;personshcedulingtoolbar&apos;]/a[2]/span/span&quot;}<br/>
-Command duration or timeout: 13 milliseconds<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;head&apos;]/div/div/div[4]/i &quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
+System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
+Driver info: driver.version: unknown<br/>
+Command duration or timeout: 572 milliseconds<br/>
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;<br/>
 System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: 09644fcf-22b8-400a-9135-55f77160b85f<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;personshcedulingtoolbar&apos;]/a[2]/span/span}</b></a><br />
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=8983175d-9f5f-4a11-9a18-071c6c6be87c, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 8983175d-9f5f-4a11-9a18-071c6c6be87c<br/>
+*** Element info: {Using=xpath, value=//*[@id=&apos;head&apos;]/div/div/div[4]/i }</b></a><br />
     <div class="stackTrace" id="exception-0">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
@@ -56,114 +59,109 @@ Session ID: 09644fcf-22b8-400a-9135-55f77160b85f<br/>
               org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)<br />
               org.openqa.selenium.By$ByXPath.findElement(By.java:358)<br />
               org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)<br />
-              com.cdp.Test.enterSalaryMenu(Test.java:88)<br />
+              com.cdp.Test.logOut(Test.java:71)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:483)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:773)<br />
-              org.testng.TestRunner.run(TestRunner.java:623)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;personshcedulingtoolbar&apos;]/a[2]/span/span&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.TestRunner.afterRun(TestRunner.java:1027)<br />
+              org.testng.TestRunner.run(TestRunner.java:627)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+              org.testng.TestNG.run(TestNG.java:1018)<br />
+              testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:36)<br />
+              testNGDriver.TestNGDriver.main(TestNGDriver.java:16)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken<br/>
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;<br/>
 System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
-Driver info: driver.version: unknown</a><br />
+Driver info: driver.version: TestNGDriver</a><br />
         <div class="stackTrace" id="exception-1">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:358)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)<br />
+                      com.cdp.Test.logOut(Test.java:71)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.TestRunner.afterRun(TestRunner.java:1027)<br />
+                      org.testng.TestRunner.run(TestRunner.java:627)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+                      org.testng.TestNG.run(TestNG.java:1018)<br />
+                      testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:36)<br />
+                      testNGDriver.TestNGDriver.main(TestNGDriver.java:16)<br />
                   </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="enter time menu">enterTimeMenu</span>
-      </td>
-  <td class="duration">
-    0.020s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;1778&apos;]&quot;}<br/>
-Command duration or timeout: 16 milliseconds<br/>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;head&apos;]/div/div/div[4]/i &quot;}<br/>
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;<br/>
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;<br/>
 System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: 09644fcf-22b8-400a-9135-55f77160b85f<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;1778&apos;]}</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:358)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)<br />
-              com.cdp.Test.enterTimeMenu(Test.java:78)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:773)<br />
-              org.testng.TestRunner.run(TestRunner.java:623)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:357)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;1778&apos;]&quot;}<br/>
+Driver info: driver.version: unknown<br/>
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;<br/>
 System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
 Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-3">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
-                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7332985459461888842webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
+        <div class="stackTrace" id="exception-2">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous2116455750016960840webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)<br />
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous2116455750016960840webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous2116455750016960840webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous2116455750016960840webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous2116455750016960840webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)<br />
                   </div>
           </div>
       </td>
 </tr>
+    
       </table>
 
 
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.cdp.Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="login">login</span>
+      </td>
+  <td class="duration">
+    7.712s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:5556/wd/hub", "firefox"</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

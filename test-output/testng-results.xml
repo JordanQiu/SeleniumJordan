@@ -2,82 +2,74 @@
 <testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="232" started-at="2015-10-22T02:49:25Z" finished-at="2015-10-22T02:49:25Z">
+  <suite name="Default suite" duration-ms="19" started-at="2015-10-24T07:15:14Z" finished-at="2015-10-24T07:15:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="232" started-at="2015-10-22T02:49:25Z" finished-at="2015-10-22T02:49:25Z">
+    <test name="Default test" duration-ms="19" started-at="2015-10-24T07:15:14Z" finished-at="2015-10-24T07:15:14Z">
       <class name="com.cdp.Test">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.cdp.Test@4a003cbe]" name="login" is-config="true" duration-ms="3015" started-at="2015-10-22T10:49:22Z" finished-at="2015-10-22T10:49:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="FAIL" signature="sitenav(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cdp.Test@4a003cbe]" name="sitenav" is-config="true" duration-ms="0" started-at="2015-10-22T10:49:25Z" finished-at="2015-10-22T10:49:25Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cdp.Test@4411d970]" name="login" is-config="true" duration-ms="0" started-at="2015-10-24T15:15:14Z" finished-at="2015-10-24T15:15:14Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'seleniumHost' is required by @Configuration on method sitenav but has not been marked @Optional or defined
-in C:\Users\Jordan.Qiu\AppData\Local\Temp\testng-eclipse-1960025688\testng-customsuite.xml]]>
+Parameter 'seleniumHost' is required by @Configuration on method login but has not been marked @Optional or defined
+in C:\Users\Jordan.Qiu\AppData\Local\Temp\testng-eclipse--1541483644\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'seleniumHost' is required by @Configuration on method sitenav but has not been marked @Optional or defined
-in C:\Users\Jordan.Qiu\AppData\Local\Temp\testng-eclipse-1960025688\testng-customsuite.xml
+Parameter 'seleniumHost' is required by @Configuration on method login but has not been marked @Optional or defined
+in C:\Users\Jordan.Qiu\AppData\Local\Temp\testng-eclipse--1541483644\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:148)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:647)
-	at org.testng.TestRunner.run(TestRunner.java:615)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
 	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sitenav -->
-        <test-method status="SKIP" signature="enterSalaryMenu()[pri:0, instance:com.cdp.Test@4a003cbe]" name="enterSalaryMenu" duration-ms="0" started-at="2015-10-22T10:49:25Z" description="enter Salary menu" finished-at="2015-10-22T10:49:25Z">
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="enterSalaryMenu()[pri:0, instance:com.cdp.Test@4411d970]" name="enterSalaryMenu" duration-ms="3" started-at="2015-10-24T15:15:14Z" description="enter Salary menu" finished-at="2015-10-24T15:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSalaryMenu -->
-        <test-method status="SKIP" signature="enterTimeMenu()[pri:0, instance:com.cdp.Test@4a003cbe]" name="enterTimeMenu" duration-ms="1" started-at="2015-10-22T10:49:25Z" description="enter time menu" finished-at="2015-10-22T10:49:25Z">
+        <test-method status="SKIP" signature="enterTimeMenu()[pri:0, instance:com.cdp.Test@4411d970]" name="enterTimeMenu" duration-ms="0" started-at="2015-10-24T15:15:14Z" description="enter time menu" finished-at="2015-10-24T15:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterTimeMenu -->
-        <test-method status="FAIL" signature="logOut()[pri:0, instance:com.cdp.Test@4a003cbe]" name="logOut" is-config="true" duration-ms="0" started-at="2015-10-22T10:49:26Z" finished-at="2015-10-22T10:49:26Z">
+        <test-method status="FAIL" signature="logOut()[pri:0, instance:com.cdp.Test@4411d970]" name="logOut" is-config="true" duration-ms="0" started-at="2015-10-24T15:15:14Z" finished-at="2015-10-24T15:15:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"html/body/div[7]/div[2]/div[4]/a[1]"}
-Command duration or timeout: 57 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='head']/div/div/div[4]/i"}
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'CDPG9MKS02', ip: '192.168.9.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3cd24725-aa35-4a12-a125-c9646443a296
-*** Element info: {Using=xpath, value=html/body/div[7]/div[2]/div[4]/a[1]}]]>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1002397d-cce1-4c58-9e4d-c2cb27fead3b
+*** Element info: {Using=xpath, value=.//*[@id='head']/div/div/div[4]/i}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[7]/div[2]/div[4]/a[1]"}
-Command duration or timeout: 57 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='head']/div/div/div[4]/i"}
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'CDPG9MKS02', ip: '192.168.9.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3cd24725-aa35-4a12-a125-c9646443a296
-*** Element info: {Using=xpath, value=html/body/div[7]/div[2]/div[4]/a[1]}
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1002397d-cce1-4c58-9e4d-c2cb27fead3b
+*** Element info: {Using=xpath, value=.//*[@id='head']/div/div/div[4]/i}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,7 +81,7 @@ Session ID: 3cd24725-aa35-4a12-a125-c9646443a296
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at com.cdp.Test.logOut(Test.java:95)
+	at com.cdp.Test.logOut(Test.java:118)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,41 +90,26 @@ Session ID: 3cd24725-aa35-4a12-a125-c9646443a296
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
 	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[7]/div[2]/div[4]/a[1]"}
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='head']/div/div/div[4]/i"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'CDPG9MKS02', ip: '192.168.9.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous845832480755841077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous845832480755841077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous845832480755841077webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous845832480755841077webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous845832480755841077webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
-	at <anonymous class>..send(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..ajax(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>.a.ajax(http://58.240.190.198:8083/hra/js2/cloud-lib.js?d=20141215:135)
-	at <anonymous class>..domManip/<(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..each(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..domManip(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..append(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..html/<(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..access(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..html(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>.<anonymous method>(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215 line 2 > eval:4)
-	at <anonymous class>.v.Callbacks/l(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>.v.Callbacks/c.fireWith(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>.T(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
-	at <anonymous class>..send/r(http://58.240.190.198:8083/hra/js/jquery-1.8.3.js?d=20141215:2)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7426251479955015702webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7426251479955015702webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7426251479955015702webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7426251479955015702webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Jordan.Qiu/AppData/Local/Temp/anonymous7426251479955015702webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->

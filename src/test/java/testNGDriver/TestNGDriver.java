@@ -25,7 +25,6 @@ public class TestNGDriver {
 	    testng.addListener(rp);
 	    System.setProperty("org.uncommons.reportng.title", "cloud test report");
 		List<String> suites= new ArrayList<String>();
-		
 		//System.out.println(System.getProperty("user.dir"));
 		suites.add(projectPath+File.separator+"TestNG.xml");
 		testng.setTestSuites(suites);

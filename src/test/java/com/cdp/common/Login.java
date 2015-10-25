@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 public class Login {
 	//url为properties文件中的objectName“url”
@@ -23,11 +25,12 @@ public class Login {
       ele4.click();
     
   }
-  
-  public static WebDriver loadDriver(){
+ 
+  public static WebDriver loadFFDriver(){
 	  WebDriver driver = new FirefoxDriver();
    
       return driver;
   }
+  
   
 }

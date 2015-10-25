@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskdef name="testng" classname="com.beust.testng.TestNGAntTask"    
+<classpath="${lib.dir}/testng-6.9.6.jar" /> 
+<target name="run" depends="compile" description="test"> 
+<java classpathref="test.classpath"
+ classname="org.testng.TestNG"
+ failonerror="true"> 
+<sysproperty key="java.security.policy"  
+ file="${lib.dir}/testng.policy"/> 
+ <arg value="-d" /> 
+ <arg value="${basedir}/test-output" /> 
+ <arg value="-suitename" /> 
+ <arg value="Suite" /> 
+ <arg value="testng.xml"/> 
+ </java> 
+ </target>
