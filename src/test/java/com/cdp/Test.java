@@ -1,26 +1,39 @@
 package com.cdp;
 import java.net.MalformedURLException;
+
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.net.URL;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
 import objectManager.UIMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.ActionChainExecutor;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.openqa.selenium.support.events.internal.EventFiringMouse;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.cdp.common.Login;
 import com.gargoylesoftware.htmlunit.javascript.configuration.BrowserName;
+import com.google.common.base.Predicate;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 import com.thoughtworks.selenium.webdriven.SeleneseCommand;
@@ -66,9 +79,13 @@ public class Test {
         
 	   @org.testng.annotations.AfterTest
 	    @Parameters({"seleniumHost","bs"})
-	    public void logOut(String seleniumHost,String bs) throws MalformedURLException{
+	    public void logOut(String seleniumHost,String bs) throws MalformedURLException, InterruptedException{
 		   WebDriver driver = setUp(seleniumHost,bs);
+		  
+		   
 	    	WebElement ele = driver.findElement(By.xpath(UIMap.getObject("logOut_xpath")));
+	    
+	       
 	    	ele.click();
 	    	WebElement ele2 = driver.findElement(By.xpath(UIMap.getObject("OK_xpath")));
 	    	ele2.click();
