@@ -30,27 +30,20 @@
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:4444/wd/hub", "chrome"</span><br />
+          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:5555/wd/hub", "chrome"</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{browserName=chrome, version=, platform=ANY}]<br/>
-Command duration or timeout: 167 milliseconds<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.<br/>
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;<br/>
 System info: host: &apos;CDPG9MKS02&apos;, ip: &apos;192.168.9.51&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
-Driver info: org.openqa.selenium.remote.RemoteWebDriver</b></a><br />
+Driver info: driver.version: TestNGDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)<br />
               org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)<br />
               org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)<br />
               org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)<br />
-              com.cdp.Test.setUp(Test.java:46)<br />
+              com.cdp.Test.setUp(Test.java:59)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -70,36 +63,100 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver</b></a><br />
               org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
               org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
               org.testng.TestNG.run(TestNG.java:1018)<br />
-              testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:36)<br />
+              testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:37)<br />
               testNGDriver.TestNGDriver.main(TestNGDriver.java:16)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities [{browserName=chrome, version=, platform=ANY}]</a><br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5555 [/127.0.0.1] failed: Connection refused: connect</a><br />
         <div class="stackTrace" id="exception-1">
-                      org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)<br />
-                      org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)<br />
-                      org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)<br />
-                      javax.servlet.http.HttpServlet.service(HttpServlet.java:727)<br />
-                      javax.servlet.http.HttpServlet.service(HttpServlet.java:820)<br />
-                      org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)<br />
-                      org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)<br />
-                      org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)<br />
-                      org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)<br />
-                      org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)<br />
-                      org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)<br />
-                      org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)<br />
-                      org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)<br />
-                      org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)<br />
-                      org.seleniumhq.jetty7.server.Server.handle(Server.java:349)<br />
-                      org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)<br />
-                      org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)<br />
-                      org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)<br />
-                      org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)<br />
-                      org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)<br />
-                      org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)<br />
-                      org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)<br />
-                      org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)<br />
-                      org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)<br />
-                      org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)<br />
-                      java.lang.Thread.run(Thread.java:745)<br />
+                      org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)<br />
+                      org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)<br />
+                      org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)<br />
+                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)<br />
+                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)<br />
+                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)<br />
+                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)<br />
+                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)<br />
+                      com.cdp.Test.setUp(Test.java:59)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.TestRunner.beforeRun(TestRunner.java:647)<br />
+                      org.testng.TestRunner.run(TestRunner.java:615)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+                      org.testng.TestNG.run(TestNG.java:1018)<br />
+                      testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:37)<br />
+                      testNGDriver.TestNGDriver.main(TestNGDriver.java:16)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: connect</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)<br />
+                      java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)<br />
+                      java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)<br />
+                      java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)<br />
+                      java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br />
+                      java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)<br />
+                      java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br />
+                      java.net.Socket.connect(Socket.java:589)<br />
+                      org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)<br />
+                      org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)<br />
+                      org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)<br />
+                      org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)<br />
+                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)<br />
+                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)<br />
+                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)<br />
+                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)<br />
+                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)<br />
+                      org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)<br />
+                      com.cdp.Test.setUp(Test.java:59)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.TestRunner.beforeRun(TestRunner.java:647)<br />
+                      org.testng.TestRunner.run(TestRunner.java:615)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1110)<br />
+                      org.testng.TestNG.run(TestNG.java:1018)<br />
+                      testNGDriver.TestNGDriver.testNGrun(TestNGDriver.java:37)<br />
+                      testNGDriver.TestNGDriver.main(TestNGDriver.java:16)<br />
                   </div>
           </div>
       </td>
@@ -144,7 +201,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver</b></a><br />
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:4444/wd/hub", "chrome"</span><br />
+          <i>Method arguments: </i><span class="arguments">"http://127.0.0.1:5555/wd/hub", "chrome"</span><br />
     
         
 

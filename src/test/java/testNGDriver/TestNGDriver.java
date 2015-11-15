@@ -21,6 +21,7 @@ public class TestNGDriver {
 		String caseLogPath=projectPath+File.separator+"src/test/java/report"+File.separator+"caseLog.txt";
 		TestNG  testng = new TestNG();
 		testng.setUseDefaultListeners(false);
+		
 	    HTMLReporter rp =new HTMLReporter();
 	    testng.addListener(rp);
 	    System.setProperty("org.uncommons.reportng.title", "cloud test report");
